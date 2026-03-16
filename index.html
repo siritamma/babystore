@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baby Store - FirstCry Inspired</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f9f9f9;
+        }
+
+        /* HEADER */
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:#ff6f61;
+            padding:15px 60px;
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+            color:white;
+        }
+
+        nav ul{
+            list-style:none;
+        }
+
+        nav ul li{
+            display:inline-block;
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            font-size:16px;
+        }
+
+        nav ul li a:hover{
+            text-decoration:underline;
+        }
+
+        /* HERO BANNER */
+        .hero{
+            height:500px;
+            background:url("https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4") no-repeat center center/cover;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-bottom:25px;
+        }
+
+        .hero button{
+            padding:12px 30px;
+            font-size:18px;
+            background:#ff6f61;
+            border:none;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .hero button:hover{
+            background:#e65b50;
+        }
+
+        /* ABOUT SECTION */
+        .about{
+            padding:60px 20px;
+            background:#fff8f7;
+            text-align:center;
+        }
+
+        .about h2{
+            font-size:32px;
+            margin-bottom:20px;
+            color:#ff6f61;
+        }
+
+        .about p{
+            font-size:18px;
+            line-height:1.6;
+            max-width:800px;
+            margin:auto;
+            color:#333;
+        }
+
+        /* CATALOG */
+        .catalog{
+            padding:60px;
+            text-align:center;
+        }
+
+        .catalog h2{
+            font-size:32px;
+            margin-bottom:20px;
+            color:#ff6f61;
+        }
+
+        .catalog p{
+            font-size:18px;
+            margin-bottom:40px;
+            color:#555;
+        }
+
+        .products{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            padding:15px;
+            margin:15px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:15px 0 5px;
+            font-size:20px;
+        }
+
+        .card p{
+            font-weight:bold;
+            margin-bottom:10px;
+            color:#ff6f61;
+        }
+
+        .card button{
+            padding:8px 15px;
+            background:#ff6f61;
+            border:none;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .card button:hover{
+            background:#e65b50;
+        }
+
+        /* FOOTER */
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+
+            nav ul li{
+                display:block;
+                margin:10px 0;
+            }
+
+            .products{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BabyWorld</div>
+    <nav>
+        <ul>
+            <li><a href="#">Baby Gear</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Toys</a></li>
+            <li><a href="#">Diapers</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Everything Your Little One Needs</h1>
+    <p>Safe, Cute & Comfortable Products for Babies</p>
+    <button>Shop Now</button>
+</section>
+
+<section class="about">
+    <h2>Welcome to BabyWorld!</h2>
+    <p>
+        At BabyWorld, we believe every child deserves the best. From comfy clothing to safe toys and essential baby care products, we offer a carefully curated selection for your little one. Shop with confidence knowing our products are safe, high-quality, and made to keep your baby happy and healthy. Discover the joy of parenting with products that bring smiles every day!
+    </p>
+</section>
+
+<section class="catalog">
+    <h2>Our Products</h2>
+    <p>Browse our popular items specially designed for babies and toddlers.</p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30" alt="Baby Stroller">
+            <h3>Baby Stroller</h3>
+            <p>$120</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/AvODs1O9hnA/maxresdefault.jpg" alt="Baby Dress">
+            <h3>Baby Dress</h3>
+            <p>$25</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/wp9630663.jpg" alt="Soft Toys">
+            <h3>Soft Toys</h3>
+            <p>$15</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.bauerhosting.com/affiliates/sites/12/2022/12/Baby-Moisturisers.jpg?ar=16:9&fit=crop&crop=top&auto=format&w=undefined&q=80" alt="Baby Creams">
+            <h3>Baby Creams</h3>
+            <p>$30</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 BabyWorld. All Rights Reserved. | Designed with ❤️
+</footer>
+
+</body>
+</html>
